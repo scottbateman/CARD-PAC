@@ -1,3 +1,5 @@
+CARD-PAC System
+-Developed at the HCI Lab, UNB in collaboration with the National Research Council of Canada
 Vuforia Augmented Reality SDK Release Package
 ==============================================
 
