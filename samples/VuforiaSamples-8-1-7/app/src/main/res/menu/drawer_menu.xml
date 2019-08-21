@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_contacts"
+            android:icon="@drawable/ic_baseline_people_24px"
+            android:title="Contacts" />
+        <item
+            android:id="@+id/menu_contact_requests"
+            android:icon="@drawable/ic_baseline_group_add_24px"
+            android:title="Contact Requests" />
+        <item
+            android:id="@+id/menu_settings"
+            android:icon="@drawable/ic_baseline_settings_20px"
+            android:title="Settings" />
+        <item
+            android:id="@+id/menu_log_out"
+            android:icon="@drawable/ic_baseline_clear_24px"
+            android:title="Log out" />
+    </group>
+</menu>
