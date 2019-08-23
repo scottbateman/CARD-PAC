@@ -74,10 +74,14 @@ public class LoginActivity extends AppCompatActivity implements ServerCaller {
         createAccountButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                createUserDialog = new CreateUserDialog();
-                createUserDialog.setCaller(LoginActivity.this);
-                if(!createUserDialog.isAdded()){
-                    createUserDialog.show(getSupportFragmentManager(), "");
+                if(GlobalVariablesClass.getServerAddress() == null){
+                    errorText.setText("Server address not set!");
+                } else {
+                    createUserDialog = new CreateUserDialog();
+                    createUserDialog.setCaller(LoginActivity.this);
+                    if (!createUserDialog.isAdded()) {
+                        createUserDialog.show(getSupportFragmentManager(), "");
+                    }
                 }
             }
         });
